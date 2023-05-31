@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;600&display=swap');
+
+
+.burger-obol{
+    background-color: #012A94;
+    width: 100%;
+    height: 50px;
+}
+
+.burger-menu {
+    position: relative;
+
+  }
+  
+  .burger-menu.open .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+  .burger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger-menu.open .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+
+  .burger-icon {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  
+  .bar {
+    margin-top: 4px;
+    margin-right: -5px;
+    width: 100%;
+    height: 8px;
+    background-color: #ffffff;
+    margin-bottom: 2px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  }
+  
+  .menu-items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f9f9f9;
+    padding: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .menu-item {
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .menu-item:hover {
+    font-size: 50px;
+    color:#012A94;
+  }
